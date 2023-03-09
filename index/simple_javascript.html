@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>with Javascript</title>
+</head>
+<body>
+  <canvas width="500px" height="300px" id="canvas-container"></canvas>
+</body>
+<script>
+  //get the canvas referance object
+  const canvas = document.getElementById("canvas-container");
+  // console.log("cavas",canvas);
+  let ctx = canvas.getContext("2d");
+  // console.log("cavas",canvas);
+  ctx.fillStyle = "black";
+  // ctx.strokeStyle = "red";
+
+  ctx.fillRect(50,50,100,50);
+  // ctx.strokeStyle(50,50,100,50);
+</script>
+</html>
